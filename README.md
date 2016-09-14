@@ -9,20 +9,21 @@ Segunda a W3C há duas formas de escrever a mesma regra de CSS: a padrão e a sh
 - background-image: url(images/bg.gif);
 - background-repeat: no-repeat;
 - background-position: top right;
+- background-attachment: fixed;
 
 ###background shorthand
-- background: #000 url(images/bg.gif) no-repeat top right;
+- background: #000 url(images/bg.gif) no-repeat top right fixed;
 
 ###font
-- font-style : italic ; 
-- font-weight : bold ; 
-- font-size :  1em ; 
-- line-height :  1% ; 
-- font-family : Arial, sans-serif ;
-
+- font-weight: bold;
+- font-style: italic;
+- font-variant: small-caps;
+- font-size: 1.5em;
+- line-height: 200%;
+- font-family: Georgia, "Times New Roman", serif;
 
 ###font shorthand
-- font: italic bold .8em/1.2 Arial, sans-serif;
+- font: bold italic small-caps 1.5em  200% Arial, Georgia, "Times New Roman", serif;
 
 ###border
 - border-width: 1px;
@@ -30,23 +31,36 @@ Segunda a W3C há duas formas de escrever a mesma regra de CSS: a padrão e a sh
 - border-color: #000;
 
 ###border Shorthand
-- border: 1px solid #000;
+- border-left: 1px solid black;
+- border-right: 1px solid black;
+- border-top: 1px solid black;
+- border-bottom: 1px solid black;
 
-###margin 
+###margin, padding
 - margin-top: 10px;
 - margin-right: 5px;
 - margin-bottom: 10px;
 - margin-left: 5px;
 
-###margin Shorthand
+###margin, padding Shorthand
 - margin: 10px 5px 10px 5px;
 *Note que os valores estão em ordem no sentido horário, de cima: top, right, botton e left*
 
-###padding
-- padding-top: 10px;
-- padding-right: 5px;
-- padding-bottom: 10px;
-- padding-left: 5px;
+### outline
+- outline-width: 3px
+- outline-style: dotted;
+- outline-color: gray;
 
-###padding Shorthand
-- padding: 10px 5px 10px 5px;
+###outline Shorthand
+- outline:3px dotted gray;
+
+###list
+- list-style-type: circle;
+- list-style-position: inside;
+- list-style-image: url(bullet.gif);
+
+###list Shorthand
+- list-style: circle inside url(bullet.gif);
+
+**THAT'S IT!** CSS Shorthand Generator [http://shrthnd.volume7.io/](http://shrthnd.volume7.io/)
+
